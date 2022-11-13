@@ -41,7 +41,8 @@ function freshDeck() {
     })
 }
 
-let playerDeck, computerDeck
+var Player1 = new Player("Player 1");
+var Player2 = new Player("Player 2");
 
 startGame(
     function startGame() {
@@ -49,8 +50,8 @@ startGame(
         deck. shuffle()
 
         const deckMidpoint = Math.ceil(deck.numberOfCards / 2)
-        playerDeck = new Deck (deck.cards.slice(0, deckMidpoint))
-        computerDeck = new Deck (deck.cards.slice(deckMidpoint, deck.numberOfCards))
+        Player1Deck = new Deck (deck.cards.slice(0, deckMidpoint))
+        Player2Deck = new Deck (deck.cards.slice(deckMidpoint, deck.numberOfCards))
 
         
 
